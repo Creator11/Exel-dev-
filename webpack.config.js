@@ -9,9 +9,7 @@ const isDev = !isProd
 
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
-if (isDev) {
-  loaders.push('eslint-loader')
-}
+
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
